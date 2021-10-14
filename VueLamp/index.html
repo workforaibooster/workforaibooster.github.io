@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Lamp View</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+    <dev class="hero">
+        <nav>
+            <img src="images/vueLamp_img/images/menu.png" class="menu-img">
+            <img src="images/vueLamp_img/images/logo.png" class="logo-img">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <dev class="lamp-container">
+            <img src="images/vueLamp_img/images/lamp.png" class="lamp">
+            <img src="images/vueLamp_img/images/light.png" class="light" id="light">
+
+        </dev>
+
+        <div class="text-container">
+            <h1>Latest <br>In Lighting</h1>
+            <p>This is the very first website of mine. 
+                I am making a huge collection of Modern Websites of all types of categories.</p>
+                <a href="">Check all Collections</a>
+
+                <div class="control">
+                    <p>01</p>
+                    <div class="line"><span></span></div>
+                    <p>02</p>
+                </div>
+        </div>
+
+      </dev>
+
+        <script>
+
+            var btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+    
+            function toggleBtn(){
+                btn.classList.toggle("active");
+                light.classList.toggle("on")
+            }
+        </script>
+
+
+    </body>
+</html>
